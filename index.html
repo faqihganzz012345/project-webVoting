@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Voting App - HSI Boarding School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0f172a] text-slate-100 min-h-screen flex flex-col items-center justify-center p-6 font-sans">
+
+  <main class="max-w-4xl w-full bg-[#1e293b] p-8 rounded-3xl shadow-2xl border border-slate-700">
+
+    <header class="text-center mb-8">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-indigo-400 mb-2">🚀 What Should We Build Next?</h1>
+      <p class="text-slate-400 text-sm">Pilih project favoritmu untuk pengerjaan berikutnya!</p>
+    </header>
+
+    <section id="voting-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+
+    </section>
+
+    <footer class="flex flex-col items-center gap-4 border-t border-slate-700 pt-6">
+
+      <div id="status-text" class="text-indigo-300 font-medium text-center bg-indigo-950/50 px-4 py-2 rounded-xl border border-indigo-800/50">
+        Silakan klik tombol vote di atas!
+      </div>
+
+      <div class="text-xl font-bold">
+        Total Votes: <span id="total-votes" class="text-indigo-400">0</span>
+      </div>
+
+      <button id="reset-btn" class="mt-2 px-5 py-2 bg-rose-600/20 hover:bg-rose-600 text-rose-300 hover:text-white border border-rose-500/30 rounded-xl text-sm font-semibold transition flex items-center gap-2">
+        🔄 RESET VOTING
+      </button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
